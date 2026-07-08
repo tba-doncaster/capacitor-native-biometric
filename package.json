@@ -44,7 +44,7 @@
     "prettier": "prettier-pretty-check \"**/*.{css,html,ts,js,java}\" --plugin=prettier-plugin-java",
     "swiftlint": "node-swiftlint",
     "docgen": "docgen --api NativeBiometricPlugin --output-readme README.md --output-json dist/docs.json",
-    "build": "bun run clean && bun run docgen && tsc && rollup -c rollup.config.mjs",
+    "build": "npx bun run clean && npx bun run docgen && tsc && rollup -c rollup.config.mjs",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
     "prepublishOnly": "bun run build",
